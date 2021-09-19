@@ -129,16 +129,19 @@ namespace QLSV
             this.Column3,
             this.Column4,
             this.Column5});
-            this.dataGridViewSV.Location = new System.Drawing.Point(169, 49);
+            this.dataGridViewSV.Location = new System.Drawing.Point(225, 60);
+            this.dataGridViewSV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridViewSV.Name = "dataGridViewSV";
             this.dataGridViewSV.ReadOnly = true;
-            this.dataGridViewSV.Size = new System.Drawing.Size(533, 358);
+            this.dataGridViewSV.RowHeadersWidth = 51;
+            this.dataGridViewSV.Size = new System.Drawing.Size(711, 441);
             this.dataGridViewSV.TabIndex = 23;
             this.dataGridViewSV.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewSV_CellClick);
             // 
             // Column1
             // 
             this.Column1.HeaderText = "STT";
+            this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
             this.Column1.Width = 40;
@@ -147,6 +150,7 @@ namespace QLSV
             // 
             this.Column2.DataPropertyName = "TenSV";
             this.Column2.HeaderText = "Họ và tên";
+            this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
             this.Column2.Width = 125;
@@ -155,13 +159,16 @@ namespace QLSV
             // 
             this.Column3.DataPropertyName = "LopSV";
             this.Column3.HeaderText = "Lớp";
+            this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
+            this.Column3.Width = 125;
             // 
             // Column4
             // 
             this.Column4.DataPropertyName = "NSSV";
             this.Column4.HeaderText = "Ngày sinh";
+            this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
             this.Column4.Width = 125;
@@ -170,80 +177,91 @@ namespace QLSV
             // 
             this.Column5.DataPropertyName = "DiaChiSV";
             this.Column5.HeaderText = "Địa chỉ";
+            this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;
+            this.Column5.Width = 125;
             // 
             // txtTenSV
             // 
-            this.txtTenSV.Location = new System.Drawing.Point(871, 49);
+            this.txtTenSV.Location = new System.Drawing.Point(1161, 60);
+            this.txtTenSV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTenSV.Name = "txtTenSV";
-            this.txtTenSV.Size = new System.Drawing.Size(200, 20);
+            this.txtTenSV.Size = new System.Drawing.Size(265, 22);
             this.txtTenSV.TabIndex = 0;
             // 
             // txtLopSV
             // 
-            this.txtLopSV.Location = new System.Drawing.Point(871, 85);
+            this.txtLopSV.Location = new System.Drawing.Point(1161, 105);
+            this.txtLopSV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtLopSV.Name = "txtLopSV";
-            this.txtLopSV.Size = new System.Drawing.Size(200, 20);
+            this.txtLopSV.Size = new System.Drawing.Size(265, 22);
             this.txtLopSV.TabIndex = 1;
             // 
             // txtDiaChiSV
             // 
-            this.txtDiaChiSV.Location = new System.Drawing.Point(871, 163);
+            this.txtDiaChiSV.Location = new System.Drawing.Point(1161, 201);
+            this.txtDiaChiSV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDiaChiSV.Name = "txtDiaChiSV";
-            this.txtDiaChiSV.Size = new System.Drawing.Size(200, 20);
+            this.txtDiaChiSV.Size = new System.Drawing.Size(265, 22);
             this.txtDiaChiSV.TabIndex = 3;
             // 
             // dateTimePickerNSSV
             // 
             this.dateTimePickerNSSV.CustomFormat = "dd/MM/yyyy";
             this.dateTimePickerNSSV.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePickerNSSV.Location = new System.Drawing.Point(871, 125);
+            this.dateTimePickerNSSV.Location = new System.Drawing.Point(1161, 154);
+            this.dateTimePickerNSSV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dateTimePickerNSSV.Name = "dateTimePickerNSSV";
-            this.dateTimePickerNSSV.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePickerNSSV.Size = new System.Drawing.Size(265, 22);
             this.dateTimePickerNSSV.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(744, 55);
+            this.label1.Location = new System.Drawing.Point(992, 68);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(42, 13);
+            this.label1.Size = new System.Drawing.Size(54, 17);
             this.label1.TabIndex = 14;
             this.label1.Text = "Họ tên:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(744, 92);
+            this.label2.Location = new System.Drawing.Point(992, 113);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(28, 13);
+            this.label2.Size = new System.Drawing.Size(36, 17);
             this.label2.TabIndex = 15;
             this.label2.Text = "Lớp:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(744, 132);
+            this.label3.Location = new System.Drawing.Point(992, 162);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(57, 13);
+            this.label3.Size = new System.Drawing.Size(75, 17);
             this.label3.TabIndex = 16;
             this.label3.Text = "Ngày sinh:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(744, 166);
+            this.label4.Location = new System.Drawing.Point(992, 204);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(43, 13);
+            this.label4.Size = new System.Drawing.Size(55, 17);
             this.label4.TabIndex = 17;
             this.label4.Text = "Địa chỉ:";
             // 
             // btnThem
             // 
-            this.btnThem.Location = new System.Drawing.Point(747, 324);
+            this.btnThem.Location = new System.Drawing.Point(996, 399);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(64, 37);
+            this.btnThem.Size = new System.Drawing.Size(85, 46);
             this.btnThem.TabIndex = 4;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
@@ -251,9 +269,10 @@ namespace QLSV
             // 
             // btnSua
             // 
-            this.btnSua.Location = new System.Drawing.Point(835, 324);
+            this.btnSua.Location = new System.Drawing.Point(1112, 369);
+            this.btnSua.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(64, 37);
+            this.btnSua.Size = new System.Drawing.Size(85, 46);
             this.btnSua.TabIndex = 5;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
@@ -261,9 +280,10 @@ namespace QLSV
             // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(927, 324);
+            this.btnXoa.Location = new System.Drawing.Point(1236, 399);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(64, 37);
+            this.btnXoa.Size = new System.Drawing.Size(85, 46);
             this.btnXoa.TabIndex = 6;
             this.btnXoa.Text = "Xoá";
             this.btnXoa.UseVisualStyleBackColor = true;
@@ -278,16 +298,19 @@ namespace QLSV
             this.Column6,
             this.Column7,
             this.Column8});
-            this.dataGridViewDiem.Location = new System.Drawing.Point(169, 431);
+            this.dataGridViewDiem.Location = new System.Drawing.Point(225, 530);
+            this.dataGridViewDiem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridViewDiem.Name = "dataGridViewDiem";
             this.dataGridViewDiem.ReadOnly = true;
-            this.dataGridViewDiem.Size = new System.Drawing.Size(533, 192);
+            this.dataGridViewDiem.RowHeadersWidth = 51;
+            this.dataGridViewDiem.Size = new System.Drawing.Size(711, 236);
             this.dataGridViewDiem.TabIndex = 22;
             // 
             // Column6
             // 
             this.Column6.DataPropertyName = "diemcc";
             this.Column6.HeaderText = "Chuyên cần";
+            this.Column6.MinimumWidth = 6;
             this.Column6.Name = "Column6";
             this.Column6.ReadOnly = true;
             this.Column6.Width = 163;
@@ -296,6 +319,7 @@ namespace QLSV
             // 
             this.Column7.DataPropertyName = "diemgk";
             this.Column7.HeaderText = "Giữa kỳ";
+            this.Column7.MinimumWidth = 6;
             this.Column7.Name = "Column7";
             this.Column7.ReadOnly = true;
             this.Column7.Width = 163;
@@ -304,6 +328,7 @@ namespace QLSV
             // 
             this.Column8.DataPropertyName = "diemck";
             this.Column8.HeaderText = "Cuối kỳ";
+            this.Column8.MinimumWidth = 6;
             this.Column8.Name = "Column8";
             this.Column8.ReadOnly = true;
             this.Column8.Width = 163;
@@ -311,23 +336,26 @@ namespace QLSV
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(169, 30);
+            this.label5.Location = new System.Drawing.Point(225, 37);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(103, 13);
+            this.label5.Size = new System.Drawing.Size(133, 17);
             this.label5.TabIndex = 25;
             this.label5.Text = "Danh sách học viên";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(709, 30);
+            this.label6.Location = new System.Drawing.Point(945, 37);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(79, 13);
+            this.label6.Size = new System.Drawing.Size(102, 17);
             this.label6.TabIndex = 13;
             this.label6.Text = "Bảng điều kiển";
             // 
             // menuStrip1
             // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.editToolStripMenuItem,
@@ -335,7 +363,7 @@ namespace QLSV
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1093, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1457, 28);
             this.menuStrip1.TabIndex = 27;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -353,7 +381,7 @@ namespace QLSV
             this.toolStripSeparator2,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
             this.fileToolStripMenuItem.Text = "&File";
             // 
             // newToolStripMenuItem
@@ -362,7 +390,7 @@ namespace QLSV
             this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.newToolStripMenuItem.Text = "&New";
             // 
             // openToolStripMenuItem
@@ -371,13 +399,13 @@ namespace QLSV
             this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.openToolStripMenuItem.Text = "&Open";
             // 
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(143, 6);
+            this.toolStripSeparator.Size = new System.Drawing.Size(178, 6);
             // 
             // saveToolStripMenuItem
             // 
@@ -385,19 +413,19 @@ namespace QLSV
             this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.saveToolStripMenuItem.Text = "&Save";
             // 
             // saveAsToolStripMenuItem
             // 
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.saveAsToolStripMenuItem.Text = "Save &As";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(143, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(178, 6);
             // 
             // printToolStripMenuItem
             // 
@@ -405,7 +433,7 @@ namespace QLSV
             this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
             this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.printToolStripMenuItem.Text = "&Print";
             // 
             // printPreviewToolStripMenuItem
@@ -413,18 +441,18 @@ namespace QLSV
             this.printPreviewToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printPreviewToolStripMenuItem.Image")));
             this.printPreviewToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printPreviewToolStripMenuItem.Name = "printPreviewToolStripMenuItem";
-            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.printPreviewToolStripMenuItem.Text = "Print Pre&view";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(143, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(178, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.exitToolStripMenuItem.Text = "E&xit";
             // 
             // editToolStripMenuItem
@@ -439,27 +467,27 @@ namespace QLSV
             this.toolStripSeparator4,
             this.selectAllToolStripMenuItem});
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(49, 24);
             this.editToolStripMenuItem.Text = "&Edit";
             // 
             // undoToolStripMenuItem
             // 
             this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
             this.undoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
-            this.undoToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.undoToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
             this.undoToolStripMenuItem.Text = "&Undo";
             // 
             // redoToolStripMenuItem
             // 
             this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
             this.redoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
-            this.redoToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.redoToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
             this.redoToolStripMenuItem.Text = "&Redo";
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(141, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(176, 6);
             // 
             // cutToolStripMenuItem
             // 
@@ -467,7 +495,7 @@ namespace QLSV
             this.cutToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
             this.cutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.cutToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.cutToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
             this.cutToolStripMenuItem.Text = "Cu&t";
             // 
             // copyToolStripMenuItem
@@ -476,7 +504,7 @@ namespace QLSV
             this.copyToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
             this.copyToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.copyToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
             this.copyToolStripMenuItem.Text = "&Copy";
             // 
             // pasteToolStripMenuItem
@@ -485,18 +513,18 @@ namespace QLSV
             this.pasteToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
             this.pasteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
             this.pasteToolStripMenuItem.Text = "&Paste";
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(141, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(176, 6);
             // 
             // selectAllToolStripMenuItem
             // 
             this.selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
-            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
             this.selectAllToolStripMenuItem.Text = "Select &All";
             // 
             // toolsToolStripMenuItem
@@ -505,19 +533,19 @@ namespace QLSV
             this.customizeToolStripMenuItem,
             this.optionsToolStripMenuItem});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(58, 24);
             this.toolsToolStripMenuItem.Text = "&Tools";
             // 
             // customizeToolStripMenuItem
             // 
             this.customizeToolStripMenuItem.Name = "customizeToolStripMenuItem";
-            this.customizeToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.customizeToolStripMenuItem.Size = new System.Drawing.Size(161, 26);
             this.customizeToolStripMenuItem.Text = "&Customize";
             // 
             // optionsToolStripMenuItem
             // 
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(161, 26);
             this.optionsToolStripMenuItem.Text = "&Options";
             // 
             // helpToolStripMenuItem
@@ -529,95 +557,102 @@ namespace QLSV
             this.toolStripSeparator5,
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(55, 24);
             this.helpToolStripMenuItem.Text = "&Help";
             // 
             // contentsToolStripMenuItem
             // 
             this.contentsToolStripMenuItem.Name = "contentsToolStripMenuItem";
-            this.contentsToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.contentsToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.contentsToolStripMenuItem.Text = "&Contents";
             // 
             // indexToolStripMenuItem
             // 
             this.indexToolStripMenuItem.Name = "indexToolStripMenuItem";
-            this.indexToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.indexToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.indexToolStripMenuItem.Text = "&Index";
             // 
             // searchToolStripMenuItem
             // 
             this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
-            this.searchToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.searchToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.searchToolStripMenuItem.Text = "&Search";
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(119, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(147, 6);
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.aboutToolStripMenuItem.Text = "&About...";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(712, 413);
+            this.label7.Location = new System.Drawing.Point(949, 508);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(85, 13);
+            this.label7.Size = new System.Drawing.Size(110, 17);
             this.label7.TabIndex = 18;
             this.label7.Text = "Bảng điều khiển";
             // 
             // txtdiemcc
             // 
-            this.txtdiemcc.Location = new System.Drawing.Point(871, 441);
+            this.txtdiemcc.Location = new System.Drawing.Point(1161, 543);
+            this.txtdiemcc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtdiemcc.Name = "txtdiemcc";
-            this.txtdiemcc.Size = new System.Drawing.Size(200, 20);
+            this.txtdiemcc.Size = new System.Drawing.Size(265, 22);
             this.txtdiemcc.TabIndex = 8;
             this.txtdiemcc.Validating += new System.ComponentModel.CancelEventHandler(this.txtdiemcc_Validating);
             // 
             // txtdiemgk
             // 
-            this.txtdiemgk.Location = new System.Drawing.Point(871, 478);
+            this.txtdiemgk.Location = new System.Drawing.Point(1161, 588);
+            this.txtdiemgk.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtdiemgk.Name = "txtdiemgk";
-            this.txtdiemgk.Size = new System.Drawing.Size(200, 20);
+            this.txtdiemgk.Size = new System.Drawing.Size(265, 22);
             this.txtdiemgk.TabIndex = 9;
             this.txtdiemgk.Validating += new System.ComponentModel.CancelEventHandler(this.txtdiemgk_Validating);
             // 
             // txtdiemck
             // 
-            this.txtdiemck.Location = new System.Drawing.Point(871, 517);
+            this.txtdiemck.Location = new System.Drawing.Point(1161, 636);
+            this.txtdiemck.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtdiemck.Name = "txtdiemck";
-            this.txtdiemck.Size = new System.Drawing.Size(200, 20);
+            this.txtdiemck.Size = new System.Drawing.Size(265, 22);
             this.txtdiemck.TabIndex = 10;
             this.txtdiemck.Validating += new System.ComponentModel.CancelEventHandler(this.txtdiemck_Validating);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(744, 448);
+            this.label8.Location = new System.Drawing.Point(992, 551);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(67, 13);
+            this.label8.Size = new System.Drawing.Size(87, 17);
             this.label8.TabIndex = 19;
             this.label8.Text = "Chuyên cần:";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(744, 485);
+            this.label9.Location = new System.Drawing.Point(992, 597);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(46, 13);
+            this.label9.Size = new System.Drawing.Size(60, 17);
             this.label9.TabIndex = 20;
             this.label9.Text = "Giữa kỳ:";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(744, 524);
+            this.label10.Location = new System.Drawing.Point(992, 645);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(45, 13);
+            this.label10.Size = new System.Drawing.Size(58, 17);
             this.label10.TabIndex = 21;
             this.label10.Text = "Cuối kỳ:";
             // 
@@ -635,9 +670,10 @@ namespace QLSV
             // 
             // btnThemDiem
             // 
-            this.btnThemDiem.Location = new System.Drawing.Point(750, 585);
+            this.btnThemDiem.Location = new System.Drawing.Point(1000, 720);
+            this.btnThemDiem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnThemDiem.Name = "btnThemDiem";
-            this.btnThemDiem.Size = new System.Drawing.Size(160, 37);
+            this.btnThemDiem.Size = new System.Drawing.Size(213, 46);
             this.btnThemDiem.TabIndex = 11;
             this.btnThemDiem.Text = "Thêm";
             this.btnThemDiem.UseVisualStyleBackColor = true;
@@ -645,9 +681,10 @@ namespace QLSV
             // 
             // btnBaoCao
             // 
-            this.btnBaoCao.Location = new System.Drawing.Point(927, 585);
+            this.btnBaoCao.Location = new System.Drawing.Point(1236, 720);
+            this.btnBaoCao.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBaoCao.Name = "btnBaoCao";
-            this.btnBaoCao.Size = new System.Drawing.Size(144, 38);
+            this.btnBaoCao.Size = new System.Drawing.Size(192, 47);
             this.btnBaoCao.TabIndex = 12;
             this.btnBaoCao.Text = "In báo cáo";
             this.btnBaoCao.UseVisualStyleBackColor = true;
@@ -656,15 +693,17 @@ namespace QLSV
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(172, 414);
+            this.label11.Location = new System.Drawing.Point(229, 510);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(88, 13);
+            this.label11.Size = new System.Drawing.Size(116, 17);
             this.label11.TabIndex = 24;
             this.label11.Text = "Điểm thành phần";
             // 
             // treeView1
             // 
-            this.treeView1.Location = new System.Drawing.Point(0, 49);
+            this.treeView1.Location = new System.Drawing.Point(0, 60);
+            this.treeView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.treeView1.Name = "treeView1";
             treeNode1.Name = "Nodecntt154";
             treeNode1.Text = "CNTT1";
@@ -684,15 +723,16 @@ namespace QLSV
             treeNode5,
             treeNode6,
             treeNode7});
-            this.treeView1.Size = new System.Drawing.Size(163, 573);
+            this.treeView1.Size = new System.Drawing.Size(216, 704);
             this.treeView1.TabIndex = 26;
             this.treeView1.NodeMouseDoubleClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeView1_NodeMouseDoubleClick);
             // 
             // btnLuu
             // 
-            this.btnLuu.Location = new System.Drawing.Point(1007, 324);
+            this.btnLuu.Location = new System.Drawing.Point(1343, 399);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(64, 37);
+            this.btnLuu.Size = new System.Drawing.Size(85, 46);
             this.btnLuu.TabIndex = 7;
             this.btnLuu.Text = "Lưu Excel";
             this.btnLuu.UseVisualStyleBackColor = true;
@@ -700,10 +740,10 @@ namespace QLSV
             // 
             // GiaoDien
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(1093, 635);
+            this.ClientSize = new System.Drawing.Size(1457, 782);
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.treeView1);
             this.Controls.Add(this.label11);
@@ -735,6 +775,7 @@ namespace QLSV
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "GiaoDien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý học viên";
